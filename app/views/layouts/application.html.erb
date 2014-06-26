@@ -1,22 +1,21 @@
-<!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
   <title>Russian Ballet International →</title>
   <meta charset="UTF-8">
   <meta name="Description" http-equiv="Description" content="Welcome to Russian Ballet International Online." />
-<meta name="Keywords" http-equiv="Keywords" content="russian ballet, russian ballet international, bolshoi ballet academy, ballet summer program, ballet dance class in russia, russian ballet technique, ballet class in moscow, russian ballet video, russian ballet college, russian ballet company, dance classes in russia" />
+  <meta name="Keywords" http-equiv="Keywords" content="russian ballet, russian ballet international, bolshoi ballet academy, ballet summer program, ballet dance class in russia, russian ballet technique, ballet class in moscow, russian ballet video, russian ballet college, russian ballet company, dance classes in russia" />
 
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="author" content=" original site by Andrei Bourtsev, Web Designer, atlantidabay.com + new backend by Matt Lucas, MattLucas.co">
+    <meta name="author"  content=" original site by Andrei Bourtsev, Web Designer, atlantidabay.com + new backend by Matt Lucas, MattLucas.co">
 
 
 
 
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 
@@ -30,10 +29,16 @@
   <meta name="google-site-verification" content="QrjOqXrTS8ScqTALcualvdjJ9nqisHxPqwPA98y8u4o" />
 
 </head>
+
 <body>
+<div class="container">
+
+  <%= render "layouts/header" %>
 
 <%= yield %>
 
+  <%= render "layouts/footer" %>
+</div>
 
 <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID. -->
 <script>
