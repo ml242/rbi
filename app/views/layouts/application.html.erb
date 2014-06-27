@@ -33,9 +33,14 @@
 <body>
 <div class="container">
 
-  <%= render "layouts/header" %>
+  
+  <!--header start-->
+  <!--#include virtual="/includes/header.html" -->
 
-<%= yield %>
+  <%= render "layouts/header" %>
+  <!--header end-->
+
+  <%= yield %>
 
   <!--footer start-->
   <div class="divide-top">
@@ -45,9 +50,6 @@
     </footer>
   </div>
   <!--footer end-->
-
-
-
 </div>
 
 <!-- Javascript - jQuery -->
