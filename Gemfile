@@ -8,6 +8,7 @@ gem 'rails', '3.2.15'
 gem 'pg'
 
 gem 'refinerycms', "2.1.2"
+gem 'fog'
 
 
 # Gems used only for assets and not required
