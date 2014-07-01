@@ -354,7 +354,9 @@ html[xmlns] .slides {display: block;}
    .main aside{margin-bottom: 3em}
    .main aside menu{padding: 0 0 0 1em; line-height: 2em;}
    .main aside menu a{color: #999;}
-   .main aside menu .buttonactive {color: #6d95c1 }
+   .main aside menu .buttonactive {color: #6d95c1; }
+
+  .works figure a { height: inherit !important; }
 
 
 /* -- SUBPAGES 
