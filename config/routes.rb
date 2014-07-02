@@ -1,6 +1,20 @@
 RbiApp::Application.routes.draw do
 
   get '/' => 'welcome#index'
+  get '/about.html' => 'welcome#about'
+  get '/contact.html' => 'welcome#contact'
+  get '/downloads.html' => 'welcome#downloads'
+  get '/florence.html' => 'welcome#florence'
+  get '/gallery-dev.html' => 'welcome#gallery-dev'
+  get '/masters-teachers-class' => 'welcome#masters-teachers-class'
+  get '/registration.html' => 'welcome#registration'
+  get '/sessions.html' => 'welcome#sessions'
+  get '/success.html' => 'welcome#success'
+  get '/summer2012.html' => 'welcome#summer2012'
+  get '/summer2013.html' => 'welcome#summer2013'
+  get '/taiwan.html' => 'welcome#taiwan'
+  get '/videos.html' => 'welcome#videos'
+
   # This line mounts Refinery's routes at the root of your application.
   # This means, any requests to the root URL of your application will go to Refinery::PagesController#home.
   # If you would like to change where this extension is mounted, simply change the :at option to something different.
