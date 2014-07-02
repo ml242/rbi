@@ -46,4 +46,5 @@ Refinery::Core.configure do |config|
 
   # Specify a different backend path than the default of /refinery.
   # config.backend_route = "refinery"
+ 
 end

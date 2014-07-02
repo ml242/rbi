@@ -11,6 +11,17 @@ end
 
 module RbiApp
   class Application < Rails::Application
+
+
+    Refinery::Core.configure do |config|
+        config.s3_backend = true
+        config.s3_bucket_name = ENV['RBI_S3_BUCKET_NAME']
+        config.s3_access_key_id = ENV['RBIAccessKeyID']
+        config.s3_secret_access_key = ENV['RBISecretAccessKey']
+        dragonfly_custom_backend_class = ''
+        dragonfly_custom_backend_opts = {}
+    end
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
