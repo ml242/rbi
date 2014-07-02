@@ -3,12 +3,7 @@ RbiApp::Application.configure do
 
   #configure app for Amazon S3
 
-  Refinery::Core.configure do |config|
-    config.s3_backend = true
-    config.s3_bucket_name = ENV['RBI_S3_BUCKET_NAME']
-    config.s3_access_key_id = ENV['RBIAccessKeyID']
-    config.s3_secret_access_key = ENV['RBISecretAccessKey']
-  end
+
 
 
   # Code is not reloaded between requests
