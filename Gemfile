@@ -9,6 +9,7 @@ gem 'pg'
 
 gem 'refinerycms', "2.1.2"
 gem 'fog'
+gem 'dragonfly'
 
 
 # Gems used only for assets and not required

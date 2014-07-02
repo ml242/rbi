@@ -72,5 +72,7 @@ RbiApp::Application.configure do
   config.s3_bucket_name = ENV['RBI_S3_BUCKET_NAME']
   config.s3_access_key_id = ENV['RBIAccessKeyID']
   config.s3_secret_access_key = ENV['RBISecretAccessKey']
+  Refinery::Core.config.s3_backend = true
+
 
 end

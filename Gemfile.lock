@@ -207,6 +207,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
+  dragonfly
   fog
   jquery-rails (~> 2.3.0)
   pg
