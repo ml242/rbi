@@ -328,12 +328,13 @@ html[xmlns] .slides {display: block;}
 
 /* -- WORKS / Home-page and Works-page
 ------------------------------------------------------------- */
+.works figure a { height: inherit !important; }
 .works figure > a{ 
-	display: block; 
-	height: 100%; width: 100%; 
-	overflow: hidden; 
-	position: relative;
-	border-top: 1px solid #DDD; padding-top: 1em; }
+  display: block; 
+  height: 100%; width: 100%; 
+  overflow: hidden; 
+  position: relative;
+  border-top: 1px solid #DDD; padding-top: 1em; }
   
   .works figure .zoom{ 
    display: block; 
@@ -344,6 +345,7 @@ html[xmlns] .slides {display: block;}
    opacity: 0;
    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 0);
    filter: alpha(opacity = 0); }
+   
 
    .works figure figcaption{ margin-top: 1em; padding: 0 0.5em; white-space: nowrap; }
    .works figure figcaption a{line-height:2em; color: #05030c; font-weight: 700; }
@@ -356,7 +358,6 @@ html[xmlns] .slides {display: block;}
    .main aside menu a{color: #999;}
    .main aside menu .buttonactive {color: #6d95c1; }
 
-   .works figure a { height: inherit !important; }
 
 
 /* -- SUBPAGES 
