@@ -1,19 +1,20 @@
 RbiApp::Application.routes.draw do
 
-  get '/' => 'welcome#index'
-  get '/about.html' => 'welcome#about'
-  get '/contact.html' => 'welcome#contact'
-  get '/downloads.html' => 'welcome#downloads'
-  get '/florence.html' => 'welcome#florence'
-  get '/gallery-dev.html' => 'welcome#gallery-dev'
-  get '/masters-teachers-class' => 'welcome#masters-teachers-class'
-  get '/registration.html' => 'welcome#registration'
-  get '/sessions.html' => 'welcome#sessions'
-  get '/success.html' => 'welcome#success'
-  get '/summer2012.html' => 'welcome#summer2012'
-  get '/summer2013.html' => 'welcome#summer2013'
-  get '/taiwan.html' => 'welcome#taiwan'
-  get '/videos.html' => 'welcome#videos'
+  get '/' => 'welcome#index', via: [:get]
+  get '/index.html' => 'welcome#index', via: [:get]
+  get '/about.html' => 'welcome#about', via: [:get]
+  get '/contact.html' => 'welcome#contact', via: [:get]
+  get '/downloads.html' => 'welcome#downloads', via: [:get]
+  get '/florence.html' => 'welcome#florence', via: [:get]
+  get '/gallery-dev.html' => 'welcome#gallery-dev', via: [:get]
+  get '/masters-teachers-class' => 'welcome#masters-teachers-class', via: [:get]
+  get '/registration.html' => 'welcome#registration', via: [:get]
+  get '/sessions.html' => 'welcome#sessions', via: [:get]
+  get '/success.html' => 'welcome#success', via: [:get]
+  get '/summer2012.html' => 'welcome#summer2012', via: [:get]
+  get '/summer2013.html' => 'welcome#summer2013', via: [:get]
+  get '/taiwan.html' => 'welcome#taiwan', via: [:get]
+  get '/videos.html' => 'welcome#videos', via: [:get]
 
   # This line mounts Refinery's routes at the root of your application.
   # This means, any requests to the root URL of your application will go to Refinery::PagesController#home.
