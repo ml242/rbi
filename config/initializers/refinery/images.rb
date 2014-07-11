@@ -39,7 +39,8 @@ Refinery::Images.configure do |config|
   # config.dragonfly_secret = "e5fd4950b4f4107a464089a8cef53c2aad7356a115da0319"
   # If you decide to trust file extensions replace :ext below with :format
   # config.dragonfly_url_format = "/system/images/:job/:basename.:ext"
-  config.dragonfly_url_host = "/gallery"
+  # config.dragonfly_url_host = "/gallery"
+  # config.dragonfly_url_host = "/gallery"
   # config.datastore_root_path = "/Users/mattlucas/dev/rbi_app/public/system/refinery/images"
   # config.trust_file_extensions = false
 
