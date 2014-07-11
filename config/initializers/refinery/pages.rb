@@ -1,9 +1,6 @@
 # encoding: utf-8
 Refinery::Pages.configure do |config|
 
-  # from Ryan Bates railscasts-332
-
-  config.new_page_parts = true
 
   # Configure specific page templates
   # config.types.register :home do |home|
@@ -11,10 +8,11 @@ Refinery::Pages.configure do |config|
   # end
 
   # Configure global page default parts
-  # config.default_parts = ["Body", "Side Body"]
+  config.default_parts = ["Body"]
 
+  # from Ryan Bates railscasts-332
   # Configure whether to allow adding new page parts
-  # config.new_page_parts = false
+  config.new_page_parts = true
 
   # Configure whether to enable marketable_urls
   # config.marketable_urls = true

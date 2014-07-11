@@ -8,6 +8,9 @@ gem 'rails', '3.2.15'
 gem 'pg'
 
 gem 'refinerycms', "2.1.2"
+gem "refinerycms-portfolio"
+gem "refinerycms-blog"
+
 gem 'fog'
 gem 'dragonfly'
 

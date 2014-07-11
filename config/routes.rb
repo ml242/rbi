@@ -1,7 +1,7 @@
 RbiApp::Application.routes.draw do
 
-  get '/' => 'welcome#index', via: [:get]
-  get '/index.html' => 'welcome#index', via: [:get]
+  # get '/' => 'home#latest-news', via: [:get]
+  # get '/index.html' => 'welcome#index', via: [:get]
   get '/about.html' => 'welcome#about', via: [:get]
   get '/contact.html' => 'welcome#contact', via: [:get]
   get '/downloads.html' => 'welcome#downloads', via: [:get]
