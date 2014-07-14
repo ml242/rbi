@@ -15,6 +15,10 @@ gem 'refinerycms-blog', '~> 2.1.0'
 gem 'fog'
 gem 'dragonfly'
 
+group :production do
+  gem 'pry-rails'
+end
+
 
 # Gems used only for assets and not required
 # in production environments by default.
