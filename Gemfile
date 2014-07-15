@@ -15,9 +15,8 @@ gem 'refinerycms-blog', '~> 2.1.0'
 gem 'fog'
 gem 'dragonfly'
 
-group :production do
-  gem 'pry-rails'
-end
+gem 'pry-rails', :group => "development"
+
 
 
 # Gems used only for assets and not required
