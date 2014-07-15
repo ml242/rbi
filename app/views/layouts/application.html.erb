@@ -111,7 +111,7 @@
 
 
 
-
+<%# binding.pry %>
 
 
 
@@ -119,7 +119,7 @@
     <section class="services grid-wrap">
       <header class="grid col-full">
         <hr>
-        <p class="fleft">Latest Blog Post, <%= @blog_post.published_at.strftime("%H:%M, %d:%m:%y") %></p>
+        <p class="fleft">latest post, <%= @blog_post.published_at.strftime("%H:%M, %m/%d/%y") %></p>
         <a href="videos.html" class="arrow fright">see more Videos</a>
       </header>
 
