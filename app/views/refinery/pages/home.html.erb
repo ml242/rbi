@@ -11,9 +11,11 @@
       <div class="grid col-one-half mq2-col-full">
 
 
-      <%= render '/refinery/content_page' %>
+      <%#= render '/refinery/content_page' %>
 
-
+      <section id='body_content'>
+        <%=raw @page.content_for(:body) %>
+      </section>
 
 
       
