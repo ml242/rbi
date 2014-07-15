@@ -119,7 +119,11 @@
     <section class="services grid-wrap">
       <header class="grid col-full">
         <hr>
-        <p class="fleft">Latest Blog Post, <%= @blog_post.published_at.strftime("%H:%M, %d:%m:%y") %></p>
+<<<<<<< HEAD
+        <p class="fleft">published at <%= @blog_post.published_at.strftime("%H:%M, %m/%d/%y") %></p>
+=======
+        <p class="fleft">Latest News</p>
+>>>>>>> parent of 7b75a92... date+time+posts are working
         <a href="videos.html" class="arrow fright">see more Videos</a>
       </header>
 
@@ -132,19 +136,22 @@
  
 
 
-        
-        <h5><%= @blog_post.title %></h5>
-        <p> <%#= strip_tags(@blog_post.body) %>
-            <%= @blog_post.body.html_safe %> </p>
-      <!--   <p>2013 was an amazing summer at the Bolshoi. Please check out our new video for some of the highlights.
+        <!-- <h5>bolshoi academy summer intensive 2013</h5>
+        <p>2013 was an amazing summer at the Bolshoi. Please check out our new video for some of the highlights.
           <p>
             Four dancers from Finland, Haiti and Taiwan had been accepted to a yearly training program at the Bolshoi Ballet Academy in Moscow.
             <p>
+<<<<<<< HEAD
               Congratulations to Anna Patomaki, Anael Barrau, Kuo Jung-An and Pan, Cheng-Hui!!!</p>
              -->
+            
+            <% binding.pry %>
+=======
+              Congratulations to Anna Patomaki, Anael Barrau, Kuo Jung-An and Pan, Cheng-Hui!!!</p> -->
+            
+>>>>>>> parent of 7b75a92... date+time+posts are working
 
             </article>
-
             <div class="slider grid col-one-half mq2-col-full">
 
               <div style="height: 300px;">
@@ -256,6 +263,9 @@
   </div>
 <!--main-->
 
+
+<% binding.pry %>
+
   <!--footer start-->
   <div class="divide-top">
     <footer class="grid-wrap">
@@ -287,5 +297,3 @@
 
 </body>
 </html>
-
-<%#= binding.pry %>

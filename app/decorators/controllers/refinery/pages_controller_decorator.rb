@@ -6,7 +6,7 @@ Refinery::PagesController.class_eval do
     
       def find_last_blog_post
         # @blog_post = Refinery::BlogPost.live.last
-        @blog_post = Refinery::Blog::Post.live.last
+        @blog_post = Refinery::Blog::Post.live.first
       end
 
   end
