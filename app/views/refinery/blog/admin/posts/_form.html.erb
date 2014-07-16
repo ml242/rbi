@@ -117,11 +117,11 @@
 
 
 <div class="field">
-  <%= f.label :image_id %>
+  <%= f.label :main_image %>
   <%= render :partial => "/refinery/admin/image_picker", :locals => {
     :f => f,
-    :field => :image_id,
-    :image => f.object.image,
+    :field => :main_image_id,
+    :image => f.object.main_image,
     :toggle_image_display => false
   }
   %>
