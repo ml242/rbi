@@ -13,9 +13,9 @@
 
       <%#= render '/refinery/content_page' %>
 
-      <section id='body_content'>
-        <%=raw @page.content_for(:body) %>
-      </section>
+<!--       <section id='body_content'>
+ -->        <%=raw @page.content_for(:body) %>
+      <!-- </section> -->
 
 
       
@@ -101,7 +101,7 @@
 
 
         
-         <h5><%= @blog_post.title %></h5>
+         <h2><%= @blog_post.title %></h2>
         <p> <%#= strip_tags(@blog_post.body) %>
             <%= @blog_post.body.html_safe %> </p>
       <!--   <p>2013 was an amazing summer at the Bolshoi. Please check out our new video for some of the highlights.
