@@ -1,0 +1,20 @@
+<div class="home-page main">
+  
+
+  <section class="grid-wrap" >
+    <header class="grid col-full">
+      <hr>
+      <p class="fleft">Blog</p>
+      <a href="/about.html" class="arrow fright">History of the Bolshoi Ballet Academy</a>
+    </header>
+
+    <div class="grid col-one-half mq2-col-full">
+
+<%= render_content_page(@page, {
+      :hide_sections => local_assigns[:hide_sections],
+      :can_use_fallback => !local_assigns[:show_empty_sections] && !local_assigns[:remove_automatic_sections]
+    }) %>
+<%= render '/refinery/draft_page_message' unless @page.try(:live?) -%>
+
+</div>
+</div>
