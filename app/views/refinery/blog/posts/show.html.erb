@@ -1,14 +1,3 @@
-<div class="home-page main">
-  
-
-  <section class="grid-wrap" >
-    <header class="grid col-full">
-      <hr>
-      <p class="fleft">Blog</p>
-      <a href="/about.html" class="arrow fright">History of the Bolshoi Ballet Academy</a>
-    </header>
-
-    <div class="grid col-one-half mq2-col-full">
 
 
 <% content_for :body do %>
@@ -30,6 +19,3 @@
   <script src="http://w.sharethis.com/button/buttons.js"></script>
   <script>stLight.options({publisher:'<%= Refinery::Blog.share_this_key %>'});</script>
 <% end if Refinery::Blog::Post::ShareThis.enabled? %>
-
-</div>
-</div>

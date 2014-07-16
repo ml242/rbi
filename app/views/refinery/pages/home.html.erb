@@ -87,8 +87,8 @@
     <section class="services grid-wrap">
       <header class="grid col-full">
         <hr>
-        <p class="fleft">latest post, <%= @blog_post.published_at.strftime("%H:%M, %m/%d/%y") %></p>
-        <a href="videos.html" class="arrow fright">see more Videos</a>
+        <p class="fleft">Latest post, <%= @blog_post.published_at.strftime("%H:%M on %m/%d/%y") %></p>
+        <a href="/blog" class="arrow fright">read more Blogposts</a>
       </header>
 
       <article class="grid col-one-half mq2-col-full">

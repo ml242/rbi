@@ -1,14 +1,4 @@
-<div class="home-page main">
-  
 
-  <section class="grid-wrap" >
-    <header class="grid col-full">
-      <hr>
-      <p class="fleft">Home</p>
-      <a href="about.html" class="arrow fright">History of the Bolshoi Ballet Academy</a>
-    </header>
-
-    <div class="grid col-one-half mq2-col-full">
 
       <% content_for :body do %>
       <%= raw @page.content_for(Refinery::Pages.default_parts.first.to_sym) if Refinery::Pages.default_parts.any? %>
@@ -31,5 +21,4 @@
       <%= render "/refinery/content_page" %>
       <% content_for :stylesheets, stylesheet_link_tag('refinery/blog/frontend') %>
 
-    </div>
-  </div>
+ 
