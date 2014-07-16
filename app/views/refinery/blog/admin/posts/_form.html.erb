@@ -115,14 +115,3 @@
            :dom_id => '#blog_post_tag_list',
            :url => refinery.tags_blog_admin_posts_url %>
 
-
-<div class="field">
-  <%= f.label :main_image %>
-  <%= render :partial => "/refinery/admin/image_picker", :locals => {
-    :f => f,
-    :field => :main_image_id,
-    :image => f.object.main_image,
-    :toggle_image_display => false
-  }
-  %>
-</div>

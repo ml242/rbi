@@ -8,8 +8,8 @@ gem 'rails', '3.2.15'
 gem 'pg'
 
 gem 'refinerycms'
-# gem 'refinerycms-portfolio', :git => 'git://github.com/resolve/refinerycms-portfolio.git', :branch => '2-0-stable'
 gem 'refinerycms-blog', '~> 2.1.0'
+gem 'refinerycms-page-images', '~> 2.1.0'
 
 
 gem 'fog'
