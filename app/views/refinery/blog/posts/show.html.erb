@@ -1,7 +1,7 @@
 
 
 <% content_for :body do %>
-  <div id="show_blog_post">
+  <div id="show_blog_post" class="bottom-space-two">
     <%= render 'post' %>
   </div>
 
@@ -9,22 +9,6 @@
 <% end %>
 
 
-<%#= render "/refinery/content_page", :remove_automatic_sections => true %>
-
-<div class="home-page main">
-  
-
-  <section class="grid-wrap" >
-    <header class="grid col-full">
-      <hr>
-      <p class="fleft"><a href="/blog">Blog</a></p>
-
-      <a href="/about.html" class="arrow fright">History of the Bolshoi Ballet Academy</a>
-    </header>
-
-    <div class="grid col-one-half mq2-col-full">
-
-<%# binding.pry %>
 
 <%= render_content_page(@page, {
       :hide_sections => [:body_content_title, local_assigns[:hide_sections]],
@@ -32,33 +16,6 @@
     }) %>
 <%= render '/refinery/draft_page_message' unless @page.try(:live?) -%>
 
-</div>
-</div>
-
-
-            <div class="slider grid col-one-half mq2-col-full">
-
-              <div style="height: 300px;">
-               
-
-
-              <ul id='gallery'>
-                <% @post.images.each do |image| %>
-                  <li>
-                    <%= link_to image_tag(image.thumbnail(geometry: "200x200#c").url),
-                                image.thumbnail(geometry: "900x600").url %>
-                  </li>
-               <% end %>
-              </ul>
-      <!--<iframe id="hp-player" src="//www.youtube.com/embed/gzbiZDSaZMQ" frameborder="0" allowfullscreen></iframe>-->
-                <!--LATEST NEWS START END-->
-
-
-              </div>
-            </div>  
-          </section>
-
-<%# content_for :stylesheets, stylesheet_link_tag('refinery/blog/frontend') %>
 <% content_for :javascripts do %>
   <%# enable AJAX'd post nav at your own risk until html5 history API implemented. %>
   <%= javascript_include_tag('refinery/blog/frontend') %>

@@ -79,15 +79,13 @@
 
 
 
-<%# binding.pry %>
-
 
 
 
     <section class="services grid-wrap">
       <header class="grid col-full">
         <hr>
-        <p class="fleft"><a href='/blog/posts/<%= @blog_post.id %>'> Latest post</a>, <%= @blog_post.published_at.strftime("%H:%M on %m/%d/%y") %></p>
+        <p class="fleft">Latest post, <%= @blog_post.published_at.strftime("%H:%M on %m/%d/%y") %></p>
         <a href="/blog" class="arrow fright">read more posts</a>
       </header>
 
@@ -100,8 +98,7 @@
  
 
 
-          <% binding.pry %>
-         <h2><%= @blog_post.title %></h2>
+         <h2><a href='/blog/posts/<%= @blog_post.id %>'> <%= @blog_post.title %></a></h2>
         <p> <%#= strip_tags(@blog_post.body) %>
             <%= @blog_post.body.html_safe %> </p>
       <!--   <p>2013 was an amazing summer at the Bolshoi. Please check out our new video for some of the highlights.

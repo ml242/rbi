@@ -484,7 +484,10 @@ ul.page-numbers{float: right;overflow:hidden; display:block;}
 .comment h6{margin-bottom: 0.5em;}
 .comment form ul li { margin-bottom: 2em }
 
-
+/* Image from Refinery Sidebar */
+.bottom-space {margin-bottom: 2em;}
+.bottom-space-two {margin-bottom: 4em;}
+#gallery {text-align: center;}
 
 /* -------------------------------------------------------------
 ======	MISC
