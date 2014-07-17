@@ -8,7 +8,7 @@ Refinery::Pages.configure do |config|
   # end
 
   # Configure global page default parts
-  config.default_parts = ["Body"]
+  config.default_parts = ["Body", "Right Side Body"]
 
   # from Ryan Bates railscasts-332
   # Configure whether to allow adding new page parts

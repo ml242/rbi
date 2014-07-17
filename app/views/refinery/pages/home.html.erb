@@ -87,8 +87,8 @@
     <section class="services grid-wrap">
       <header class="grid col-full">
         <hr>
-        <p class="fleft">Latest post, <%= @blog_post.published_at.strftime("%H:%M on %m/%d/%y") %></p>
-        <a href="/blog" class="arrow fright">read more Blogposts</a>
+        <p class="fleft"><a href='/blog/posts/<%= @blog_post.id %>'> Latest post</a>, <%= @blog_post.published_at.strftime("%H:%M on %m/%d/%y") %></p>
+        <a href="/blog" class="arrow fright">read more posts</a>
       </header>
 
       <article class="grid col-one-half mq2-col-full">
@@ -100,7 +100,7 @@
  
 
 
-        
+          <% binding.pry %>
          <h2><%= @blog_post.title %></h2>
         <p> <%#= strip_tags(@blog_post.body) %>
             <%= @blog_post.body.html_safe %> </p>

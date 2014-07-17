@@ -1,1 +1,79 @@
-<%= render '/refinery/content_page' %>
+<%#= render '/refinery/show_content_page' %>
+
+<div class="home-page main">
+    
+
+    <section class="grid-wrap" >
+      <header class="grid col-full">
+        <hr>
+        <p class="fleft">Home</p>
+        <a href="/about.html" class="arrow fright">History of the Bolshoi Ballet Academy</a>
+      </header>
+
+      <div class="grid col-one-half mq2-col-full">
+
+
+      <%#= render '/refinery/content_page' %>
+
+<!--       <section id='body_content'>
+ -->        <%=raw @page.content_for(:body) %>
+      <!-- </section> -->
+
+
+      
+
+
+      <!-- this is the title text at the top of the page -->
+
+
+<!--         <h1>Bolshoi Ballet Academy now offers an annual summer program in Moscow.</h1>
+        <p>Each day the students take three dance classes covering range of techniques, including Russian Ballet, Pointe class, Partnering, Character dance, Historical dance, Classical repertory and stretching. Our current, year-round faculty teaches all of these classes for our summer exchange students. </p> -->
+
+
+      </div>
+
+
+      <div class="slider grid col-one-half mq2-col-full">
+        <div class="flexslider">
+          <div class="slides">
+            <div class="slide">
+              <figure>
+                <img src="img/rbi-home-slide-1.jpg" alt="">
+                <figcaption>
+                  <div>
+                    <h5>The Bolshoi Ballet Academy </h5>
+                    <p><a href="#">The Bolshoi Ballet Academy</a> was established in 1773 to train the highest caliber Russian talent, but recently we have opened our doors to international students.</p>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="slide">
+              <figure>
+                <img src="img/rbi-home-slide-2.jpg" alt="">
+                <figcaption>
+                  <div>
+                    <h5>SUMMER INTENSIVE</h5>
+                    <p>Students who meet the required level of technique will be eligible for a cultural dance experience on a trip to the Bolshoi Ballet Academy.</p>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="slide">
+              <figure>
+                <img src="img/rbi-home-slide-3.jpg" alt="">
+                <figcaption>
+                  <div>
+                    <h5>SUMMER SESSIONS</h5>
+                    <p>Our summer program runs for four weeks and students may come for any duration: from one week to the entire four weeks.  </p>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
