@@ -14,7 +14,7 @@
       <%#= render '/refinery/content_page' %>
 
 <!--       <section id='body_content'>
- -->        <%=raw @page.content_for(:body) %>
+ -->        <%=raw @page.content_for(:body).html_safe %>
       <!-- </section> -->
 
 

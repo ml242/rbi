@@ -8,7 +8,7 @@ RbiApp::Application.routes.draw do
   get '/contact.html' => 'welcome#contact', via: [:get]
   get '/downloads.html' => 'welcome#downloads', via: [:get]
   get '/florence.html' => 'welcome#florence', via: [:get]
-  get '/gallery-dev.html' => 'welcome#gallery-dev', via: [:get]
+  get '/gallery.html' => 'welcome#gallery', via: [:get]
   get '/masters-teachers-class' => 'welcome#masters-teachers-class', via: [:get]
   get '/registration.html' => 'welcome#registration', via: [:get]
   get '/sessions.html' => 'welcome#sessions', via: [:get]
