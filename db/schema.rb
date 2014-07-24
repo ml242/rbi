@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140724040120) do
+ActiveRecord::Schema.define(:version => 20140716234546) do
 
   create_table "refinery_blog_categories", :force => true do |t|
     t.string   "title"
@@ -95,8 +95,6 @@ ActiveRecord::Schema.define(:version => 20140724040120) do
     t.string   "name"
     t.date     "date"
     t.string   "location"
-    t.boolean  "youtube"
-    t.string   "video"
     t.text     "description"
     t.integer  "position"
     t.datetime "created_at",  :null => false
@@ -117,11 +115,13 @@ ActiveRecord::Schema.define(:version => 20140724040120) do
   create_table "refinery_image_pages", :force => true do |t|
     t.integer "image_id"
     t.integer "page_id"
+    t.integer "gallery_id"
     t.integer "position"
     t.text    "caption"
-    t.string  "page_type", :default => "page"
+    t.string  "page_type",  :default => "page"
   end
 
+  add_index "refinery_image_pages", ["gallery_id"], :name => "index_refinery_image_pages_on_gallery_id"
   add_index "refinery_image_pages", ["image_id"], :name => "index_refinery_image_pages_on_image_id"
   add_index "refinery_image_pages", ["page_id"], :name => "index_refinery_image_pages_on_page_id"
 

@@ -5,8 +5,6 @@ class CreateGalleriesGalleries < ActiveRecord::Migration
       t.string :name
       t.date :date
       t.string :location
-      t.boolean :youtube
-      t.string :video
       t.text :description
       t.integer :position
 

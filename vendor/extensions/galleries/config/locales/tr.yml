@@ -27,6 +27,4 @@ tr:
         name: Name
         date: Date
         location: Location
-        youtube: Youtube
-        video: Video
         description: Description
