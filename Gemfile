@@ -47,3 +47,5 @@ gem 'jquery-rails', "~> 2.3.0"
 
 # To use debugger
 # gem 'debugger'
+
+gem 'refinerycms-galleries', :path => 'vendor/extensions'
