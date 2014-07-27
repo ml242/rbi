@@ -348,7 +348,7 @@ html[xmlns] .slides {display: block;}
    
 
    .works figure figcaption{ margin-top: 1em; padding: 0 0.5em; white-space: normal; height: 4em; }
-   .works figure figcaption a{line-height:2em; color: #05030c; font-weight: 700; }
+   .works figure figcaption a{line-height:2em; color: #05030c; font-weight: 700;  white-space: normal; height: 4em; }
    .works figure figcaption p{ margin: 0; }
 
    .works-page .works figure { margin-bottom: 3em;}
