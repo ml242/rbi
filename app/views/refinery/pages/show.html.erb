@@ -1,286 +1,35 @@
  <%#= render '/refinery/show_content_page' %>
 <div class="home-page main">
-    
 
-    <section class="grid-wrap" >
-      <header class="grid col-full">
-        <hr>
-        <p class="fleft">Gallery DOS</p>
-        <a href="/about.html" class="arrow fright">History of the Bolshoi Ballet Academy</a>
-      </header>
-
-
-      <div class="grid col-one-half mq2-col-full">
-
-
-      <%#= render '/refinery/content_page' %>
-
-      <section id='body_content'>
- -->      
-      <!-- </section> -->
-
-
-      
-
-      <!-- this is the title text at the top of the page -->
-
-
-<!--         <h1>Bolshoi Ballet Academy now offers an annual summer program in Moscow.</h1>
-        <p>Each day the students take three dance classes covering range of techniques, including Russian Ballet, Pointe class, Partnering, Character dance, Historical dance, Classical repertory and stretching. Our current, year-round faculty teaches all of these classes for our summer exchange students. </p> -->
-
-
-     <!--  </div>
-
-
-      <div class="slider grid col-one-half mq2-col-full">
-        <div class="flexslider">
-          <div class="slides">
-            <div class="slide">
-              <figure>
-                <img src="img/rbi-home-slide-1.jpg" alt="">
-                <figcaption>
-                  <div>
-                    <h5>The Bolshoi Ballet Academy </h5>
-                    <p><a href="#">The Bolshoi Ballet Academy</a> was established in 1773 to train the highest caliber Russian talent, but recently we have opened our doors to international students.</p>
-                  </div>
-                </figcaption>
-              </figure>
-            </div>
-
-            <div class="slide">
-              <figure>
-                <img src="img/rbi-home-slide-2.jpg" alt="">
-                <figcaption>
-                  <div>
-                    <h5>SUMMER INTENSIVE</h5>
-                    <p>Students who meet the required level of technique will be eligible for a cultural dance experience on a trip to the Bolshoi Ballet Academy.</p>
-                  </div>
-                </figcaption>
-              </figure>
-            </div>
-
-            <div class="slide">
-              <figure>
-                <img src="img/rbi-home-slide-3.jpg" alt="">
-                <figcaption>
-                  <div>
-                    <h5>SUMMER SESSIONS</h5>
-                    <p>Our summer program runs for four weeks and students may come for any duration: from one week to the entire four weeks.  </p>
-                  </div>
-                </figcaption>
-              </figure>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-    </section> -->
-
-
-      <%# binding.pry %>
-
-    <div class="works-page main grid-wrap">
+   <div class="work-page main grid-wrap">
 
     <header class="grid col-full">
       <hr>
-      <p class="fleft">Gallery DOS</p>
+      <p class="fleft"><%= @page.title %></p>
     </header>
 
 
-    <aside class="grid col-one-quarter mq2-col-full">
-      <p class="mbottom">
-            <!--Gallery Description Starts HERE-->
-            Here are some pictures from our sessions.
-             <!--Gallery Description Ends HERE-->
-            Click on picture to go to full session gallery.</p>
-      <menu>
-             <!--Gallery Tabs Starts HERE-->
-        <a  id="work_all" class="arrow buttonactive">All</a><br>
-                <a  id="work_3" class="arrow">Auditions in Taiwan</a><br>
-        <a  id="work_2" class="arrow">Summer 2013 Sessions</a><br>
-                <a  id="work_4" class="arrow">In the Class with Master Teachers</a><br>
-                <a  id="work_5" class="arrow">Auditions in Florence</a><br> 
-                <!--<a  id="work_1" class="arrow">Summer 2012 Sessions</a><br>-->
-                 <!--Gallery Tabs Ends HERE-->
-                 
-                <!--<a  id="work_2" class="arrow">Bolshoi Academy</a><br>
-        <a  id="work_3" class="arrow">Cool Pix, etc.</a>-->
-      </menu>
-    </aside>
-    
-    <section class="grid col-three-quarters mq2-col-full">
-    
-          <div class="grid-wrap works">
-    
-<!--GALLERY STARTS HERE-->
+    <aside class="grid col-one-quarter mq2-col-one-third mq3-col-full">
 
-<!--FIRST ROW START-->
+    <%= raw @page.content_for(:left_side_body).html_safe %> 
+  </aside>
+  
+    <section class="grid col-three-quarters mq2-col-two-thirds mq3-col-full">
+  
+    <% @page.images.each_with_index do |image, i| %>
+      <figure class="">
+<!--         <a href="<%#= image.image_name %>" name="<%#= image.image_name %>"> -->
+        <%= image_tag(image.thumbnail.url) %>
+        </a>
+        <figcaption>
+            <p><%= @page.caption_for_image_index(i).html_safe %></p>
+        </figcaption>
+      </figure>
+    <% end %>
 
-<!--First Picture Starts HERE-->                 
-                 <figure class="grid col-one-third mq1-col-one-half mq2-col-one-third mq3-col-full work_3">
-          <a href="taiwan.html#taiwan-1" >
-          <img src="img/gallery/taiwan/taiwan-1-IMG_0993.jpg" alt="" >
-          <span class="zoom"></span>
-          </a>
-<figcaption>
-            <a href="taiwan.html#taiwan-1" class="arrow">Auditions in Taiwan</a>
-<p>Getting ready</p>
-          </figcaption>
-        </figure>
-<!--First Picture Ends HERE-->  
-                
-                <figure class="grid col-one-third mq1-col-one-half mq2-col-one-third mq3-col-full work_3">
-          <a href="taiwan.html#taiwan-3" >
-          <img src="img/gallery/taiwan/taiwan-3-IMG_0997.jpg" alt="" >
-          <span class="zoom"></span>
-          </a>
-<figcaption>
-            <a href="taiwan.html#taiwan-3" class="arrow">Auditions in Taiwan</a>
-<p>Master teacher Ilya Ryzhakov is at work</p>
-          </figcaption>
-        </figure>
-                
-                <figure class="grid col-one-third mq1-col-one-half mq2-col-one-third mq3-col-full work_3">
-          <a href="taiwan.html#taiwan-5" >
-          <img src="img/gallery/taiwan/taiwan-5-IMG_1005.jpg" alt="" >
-          <span class="zoom"></span>
-          </a>
-<figcaption>
-            <a href="taiwan.html#taiwan-5" class="arrow">Auditions in Taiwan</a>
-<p>Our group in Taiwan</p>
-          </figcaption>
-        </figure>
-                
-<!--FIRST ROW END--> 
-
-<!--SECOND ROW START-->
-
-<!--First Picture Starts HERE-->                 
-                <figure class="grid col-one-third mq1-col-one-half mq2-col-one-third mq3-col-full work_2">
-          <a href="summer2013.html#2013-1" >
-          <img src="img/gallery/2013/1.jpg" alt="" >
-          <span class="zoom"></span>
-          </a>
-<figcaption>
-            <a href="summer2013.html#2013-1" class="arrow">Summer 2013 Sessions</a>
-<p>Ready For Transatlantic Flight</p>
-          </figcaption>
-        </figure>
-<!--First Picture Ends HERE-->  
-                
-              <figure class="grid col-one-third mq1-col-one-half mq2-col-one-third mq3-col-full work_2">
-          <a href="summer2013.html#2013-11" >
-          <img src="img/gallery/2013/11.jpg" alt="" >
-          <span class="zoom"></span>
-          </a>
-<figcaption>
-            <a href="summer2013.html#2013-11" class="arrow">Summer 2013 Sessions</a>
-<p>We Love Moscow</p>
-          </figcaption>
-        </figure>
-                
-                <figure class="grid col-one-third mq1-col-one-half mq2-col-one-third mq3-col-full work_2">
-          <a href="summer2013.html#2013-18" >
-          <img src="img/gallery/2013/18.jpg" alt="" >
-          <span class="zoom"></span>
-          </a>
-<figcaption>
-            <a href="summer2013.html#2013-18" class="arrow">Summer 2013 Sessions</a>
-<p>I Want To Dance Here!</p>
-          </figcaption>
-        </figure>
-                
-<!--SECOND ROW END-->  
-<!--THIRD ROW START-->
-
-<!--First Picture Starts HERE-->                 
-                 <figure class="grid col-one-third mq1-col-one-half mq2-col-one-third mq3-col-full work_4">
-          <a href="master-teachers-class.html#mt-2">
-          <img src="img/gallery/master-teachers/mt-2.jpg" alt="" >
-          <span class="zoom"></span>
-          </a>
-<figcaption>
-            <a href="master-teachers-class.html#mt-2" class="arrow">Master Teachers Class</a>
-<p>Historical Dance</p>
-          </figcaption>
-        </figure>
-<!--First Picture Ends HERE-->  
-                
-                <figure class="grid col-one-third mq1-col-one-half mq2-col-one-third mq3-col-full work_4">
-          <a href="master-teachers-class.html#mt-11">
-          <img src="img/gallery/master-teachers/mt-11.jpg" alt="" >
-          <span class="zoom"></span>
-          </a>
-<figcaption>
-            <a href="master-teachers-class.html#mt-11" class="arrow">Master Teachers Class</a>
-<p>That's The Attitude!</p>
-          </figcaption>
-        </figure>
-                
-                <figure class="grid col-one-third mq1-col-one-half mq2-col-one-third mq3-col-full work_4">
-          <a href="master-teachers-class.html#mt-19">
-          <img src="img/gallery/master-teachers/mt-19.jpg" alt="" >
-          <span class="zoom"></span>
-          </a>
-<figcaption>
-            <a href="master-teachers-class.html#mt-19" class="arrow">Master Teachers Class</a>
-<p>Russian Student</p>
-          </figcaption>
-        </figure>
-                
-<!--THIRD ROW END--> 
-
-              
-<!--FOURTH ROW START-->
-
-<!--First Picture Starts HERE-->                 
-                 <figure class="grid col-one-third mq1-col-one-half mq2-col-one-third mq3-col-full work_5">
-                    <a href="florence.html#florence-1">
-                    <img src="img/gallery/florence/florence-1.jpg" alt="" >
-                    <span class="zoom"></span>
-                    </a>
-<figcaption>
-                        <a href="florence.html#mt-2" class="arrow">Auditions in Florence</a>
-<p>Image description goes here</p>
-                  </figcaption>
-                </figure>
-<!--First Picture Ends HERE-->  
-                
-                <figure class="grid col-one-third mq1-col-one-half mq2-col-one-third mq3-col-full work_5">
-                    <a href="florence.html#florence-2">
-                    <img src="img/gallery/florence/florence-2.jpg" alt="" >
-                    <span class="zoom"></span>
-                    </a>
-<figcaption>
-                        <a href="florence.html#mt-11" class="arrow">Auditions in Florence</a>
-<p>Image description goes here</p>
-                  </figcaption>
-                </figure>
-                
-                <figure class="grid col-one-third mq1-col-one-half mq2-col-one-third mq3-col-full work_5">
-                    <a href="florence.html#florence-3">
-                    <img src="img/gallery/florence/florence-3.jpg" alt="" >
-                    <span class="zoom"></span>
-                    </a>
-<figcaption>
-                        <a href="florence.html#mt-19" class="arrow">Auditions in Florence</a>
-<p>Image description goes here</p>
-                  </figcaption>
-                </figure>
-                
-<!--FOURTH ROW END-->    
-            
-                
-<!--GALLERY ENDS HERE-->
-    
-    
-      </div>
-            <!-- grid inside 3/4-->
-    
     </section>  
     
     
     
-  </div>
-  <!--main
+</div>
+<!--main-->
