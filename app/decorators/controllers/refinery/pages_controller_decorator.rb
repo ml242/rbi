@@ -2,7 +2,7 @@ Refinery::PagesController.class_eval do
   
     before_filter :find_last_blog_post, :only => [:home]
     before_filter :get_last_four_galleries, :only => [:home]
-    before_filter :get_gallery_index, :only => [:gallery, :show]
+    before_filter :get_gallery_index, :only => [:show]
  
 
     protected

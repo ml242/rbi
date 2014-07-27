@@ -35,6 +35,7 @@
 
       <!-- NEW DYNAMIC GALLERY STARTS HERE-->
 
+  <% if @gallery_index %>
     <% @gallery_index.each do |gallery| %>
       <figure class="grid col-one-third mq1-col-one-half mq2-col-one-third mq3-col-full work_3">
         <a href="<%= gallery.path %>" >
@@ -47,7 +48,7 @@
         </figcaption>
       </figure>
     <% end %>
-     
+  <% end %>
 
 
 

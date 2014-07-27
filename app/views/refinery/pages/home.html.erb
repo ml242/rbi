@@ -175,7 +175,8 @@
       <span class="zoom"></span>
       </a>
       <figcaption>
-        <a href="<%= gallery.path%>" class="arrow"><%= gallery.slug %></a> 
+        <a href="<%= gallery.path%>" class="arrow"><%= gallery.title %></a> 
+        <p><%= gallery.caption_for_image_index(0).html_safe %></p> 
       </figcaption>
     </figure>
   <% end %>
