@@ -25,7 +25,7 @@
      <!--Gallery Tabs Ends HERE-->
 
               <!--<a  id="work_2" class="arrow">Bolshoi Academy</a><br>
-              <a  id="work_3" class="arrow">Cool Pix, etc.</a>-->
+              <a  id="work_3" class="arrow">Cool Pix, etc.</a>
     </menu> -->
 </aside>
 
@@ -42,9 +42,8 @@
           <span class="zoom"></span>
         </a>
         <figcaption>
-          <a href="<%= gallery.path %>" class="arrow"><%= gallery.slug %></a>
-          <p><%= gallery.slug %></p>
-          <%= binding.pry %>
+          <a href="<%= gallery.path %>" class="arrow">
+          <%= gallery.caption_for_image_index(0).html_safe  %></a>
         </figcaption>
       </figure>
     <% end %>
