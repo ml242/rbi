@@ -10,8 +10,9 @@
 
 
     <aside class="grid col-one-quarter mq2-col-one-third mq3-col-full">
-
-    <%= raw @page.content_for(:left_side_body).html_safe %> 
+    <% if @page.content_for(:left_side_body) %>
+      <%= raw @page.content_for(:left_side_body).html_safe %> 
+    <% end %>
   </aside>
   
     <section class="grid col-three-quarters mq2-col-two-thirds mq3-col-full">
