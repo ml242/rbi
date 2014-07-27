@@ -16,7 +16,9 @@
 
    <div class="slider grid col-one-half mq2-col-full">
     <div class="flexslider">
+
       <div class="slides">
+        
         <div class="slide">
           <figure>
             <img src="img/rbi-home-slide-1.jpg" alt="">
@@ -129,9 +131,6 @@
           </article>  
         </section>
 
-
-
-
         <section class="works grid-wrap">
           <header class="grid col-full">
             <hr>
@@ -140,19 +139,9 @@
           </header>
 
 
-          <% @gallery_recent.each do |gallery| %>
-          <figure class="grid col-one-quarter mq2-col-one-half">
-            <%= link_to image_tag(gallery.images.first.thumbnail(geometry: "246x184").url), gallery.url %>
-            <span class="zoom"></span>
-            <figcaption>
-              <a href="gallery-section/<%= gallery.id %>" class="arrow"><%= gallery.title %></a>
-              <%= gallery.caption_for_image_index(0).html_safe %>
-            </figcaption>
-          </figure>
-          <% end %>
+            <%= render "layouts/gallery" %>
 
-
-        </section>
+          </section>
 
       </div>
 <!--main-->
