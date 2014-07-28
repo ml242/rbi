@@ -12,8 +12,7 @@ Refinery::PagesController.class_eval do
       end
 
       def get_last_four_galleries
-        @gallery_recent = Refinery::Page.where(:parent_id => 6)
-        @gallery_recent.find(:all, :order => "id desc", :limit => 4).reverse
+        @gallery_recent = Refinery::Page.where(:parent_id => 6).find(:all, :order => "id desc", :limit => 4).reverse
       end
 
 
