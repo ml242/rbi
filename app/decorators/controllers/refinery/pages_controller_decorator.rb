@@ -1,7 +1,4 @@
 Refinery::PagesController.class_eval do
-
-  include ActionView::AssetPaths
-  include ActionView::Helpers::AssetTagHelper
   
     before_filter :find_last_blog_post, :only => [:home]
     before_filter :get_last_four_galleries, :only => [:home]
