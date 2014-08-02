@@ -40,7 +40,6 @@
     <% @gallery_index.each do |gallery| %>
       <figure class="grid col-one-third mq1-col-one-half mq2-col-one-third mq3-col-full work_3">
         <a href="/gallery-section/<%= gallery.parent.slug %>/<%= gallery.slug %>" >
-          <% binding.pry %>
           <%= image_tag(gallery.images.first.thumbnail(geometry: "246x184").url) %>
           <span class="zoom"></span>
         </a>
