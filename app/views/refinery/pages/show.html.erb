@@ -18,9 +18,8 @@
     <section class="grid col-three-quarters mq2-col-two-thirds mq3-col-full">
   
     <% @page.images.each_with_index do |image, i| %>
-      <figure class="">
-<!--         <a href="<%#= image.image_name %>" name="<%#= image.image_name %>"> -->
-        <%= image_tag(image.thumbnail.url) %>
+        <figure class="">
+          <%= image_tag(image.thumbnail.url) %>
         </a>
         <figcaption>
             <p><%= @page.caption_for_image_index(i).html_safe %></p>
