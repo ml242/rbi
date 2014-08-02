@@ -1,3 +1,5 @@
+
+
   <% @gallery_recent.each do |gallery| %>
   <figure class="grid col-one-quarter mq2-col-one-half">
     <%= link_to image_tag(gallery.images.first.thumbnail(geometry: "246x184").url), gallery.url %>
@@ -5,6 +7,5 @@
       <%= link_to gallery.title, :url => gallery.url, :class => "arrow" %>
       <%= gallery.caption_for_image_index(0).html_safe %>
     </figcaption>
-  
   </figure>
   <% end %>
