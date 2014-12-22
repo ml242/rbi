@@ -7,6 +7,8 @@ gem 'rails', '3.2.15'
 
 gem 'pg'
 
+gem 'puma'
+
 gem 'refinerycms'
 gem 'refinerycms-blog', '~> 2.1.0'
 gem 'refinerycms-page-images', '~> 2.1.0'
