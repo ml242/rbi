@@ -1,4 +1,4 @@
-/* -------------------------------------------------------------
+ -------------------------------------------------------------
 ======	RESET
 ------------------------------------------------------------- */
 article, aside, details, figcaption, figure, 
@@ -32,7 +32,6 @@ html, button, input, select, textarea {
    p{margin: 0 0 1em;}
    p:last-child {margin-bottom: 0;}
 
-   a:visited{opacity:0.9; color:#05030C;}
    a:active, a:focus{position:relative;top:1px;}
    abbr[title]{border-bottom:1px dotted}
    dfn{font-style:italic}
@@ -238,6 +237,9 @@ body{width:100%; background: url(../img/stripes.png) no-repeat 40% 0;}
     .alignleft{float: left;clear: left;margin: 0.38em 1.62em 0.38em 0;}
     .alignright {float: right;clear: right;margin: 0.38em 0 0.38em 1.62em;}
     .aligncenter {margin: 0 auto 1.62em;display: block;}
+
+    .fright a { color: #6d95c1 !important;}
+    .fright a:visited { color: #6d95c1 !important;}
 
 
 
@@ -600,4 +602,4 @@ ul.page-numbers{float: right;overflow:hidden; display:block;}
 
 /* -------------------------------------------------------------
 ======	END
-------------------------------------------------------------- */
+------------------------------------------------------------- 

@@ -14,20 +14,7 @@
     <%=  @page.content_for(:right_side_body).html_safe %>
   </p>
 
-   <!--  <menu>
-     < Gallery Tabs Starts HERE-->
 
-     <!-- <a  id="work_all" class="arrow buttonactive">All</a><br>
-     <a  id="work_3" class="arrow">Auditions in Taiwan</a><br>
-     <a  id="work_2" class="arrow">Summer 2013 Sessions</a><br>
-     <a  id="work_4" class="arrow">In the Class with Master Teachers</a><br>
-     <a  id="work_5" class="arrow">Auditions in Florence</a><br>  -->
-     <!--<a  id="work_1" class="arrow">Summer 2012 Sessions</a><br>-->
-     <!--Gallery Tabs Ends HERE-->
-
-              <!--<a  id="work_2" class="arrow">Bolshoi Academy</a><br>
-              <a  id="work_3" class="arrow">Cool Pix, etc.</a>
-    </menu> -->
 </aside>
 
   <section class="grid col-three-quarters mq2-col-full">
@@ -45,7 +32,7 @@
         </a>
 
         <figcaption>
-          <a href="<%= gallery.path %>" class="arrow">
+          <a href="/gallery-section/gallery-main/<%= gallery.slug %>" class="arrow">
           <%= gallery.caption_for_image_index(0).html_safe  %></a>
         </figcaption>
       </figure>
