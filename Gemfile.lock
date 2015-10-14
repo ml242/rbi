@@ -108,7 +108,7 @@ GEM
     nokogiri (1.6.2.1)
       mini_portile (= 0.6.0)
     orm_adapter (0.5.0)
-    pg (0.17.1)
+    pg (0.18.3)
     polyglot (0.3.5)
     pry (0.10.0)
       coderay (~> 1.1.0)
@@ -238,7 +238,7 @@ DEPENDENCIES
   dragonfly
   fog
   jquery-rails (~> 2.3.0)
-  pg
+  pg (= 0.18.3)
   pry-rails
   puma
   rails (= 3.2.15)
@@ -247,3 +247,6 @@ DEPENDENCIES
   refinerycms-page-images (~> 2.1.0)
   sass-rails (~> 3.2.3)
   uglifier (>= 1.0.3)
+
+BUNDLED WITH
+   1.10.6

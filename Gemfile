@@ -5,7 +5,7 @@ gem 'rails', '3.2.15'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'pg'
+gem 'pg', '0.18.3'
 
 gem 'puma'
 
@@ -18,7 +18,6 @@ gem 'fog'
 gem 'dragonfly'
 
 gem 'pry-rails', :group => :development
-
 
 
 # Gems used only for assets and not required
