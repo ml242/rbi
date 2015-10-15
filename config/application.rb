@@ -72,10 +72,22 @@ module RbiApp
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
-    config.action_dispatch.default_headers = {
-        'Access-Control-Allow-Origin' => 'http://rbi-test.herokuapp.com',
-        'Access-Control-Request-Method' => %w{GET POST OPTIONS}.join(",")
-    }
+    config.middleware.insert_before 0, "Rack::Cors", :debug => true, :logger => (-> { Rails.logger }) do
+          allow do
+            origins '*'
+
+            resource '/refinery',
+              :headers => :any,
+              :methods => [:post],
+              :credentials => true,
+              :max_age => 0
+
+            resource '*',
+              :headers => :any,
+              :methods => [:get, :post, :delete, :put, :options, :head],
+              :max_age => 0
+          end
+        end
 
   end
 end
