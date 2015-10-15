@@ -72,5 +72,10 @@ module RbiApp
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
+    config.action_dispatch.default_headers = {
+        'Access-Control-Allow-Origin' => 'http://rbi-test.herokuapp.com.com',
+        'Access-Control-Request-Method' => %w{GET POST OPTIONS}.join(",")
+    }
+
   end
 end
