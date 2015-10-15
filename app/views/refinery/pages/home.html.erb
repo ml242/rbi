@@ -18,7 +18,7 @@
     <div class="flexslider">
 
       <div class="slides">
-        
+
         <div class="slide">
           <figure>
             <img src="img/rbi-home-slide-1.jpg" alt="">
@@ -62,11 +62,6 @@
 </section>
 
 
-
-
-
-
-
 <section class="services grid-wrap">
   <header class="grid col-full">
     <hr>
@@ -78,70 +73,100 @@
 
 
 
+    <h2><a href="/blog/posts/<%= @blog_post.id %>">
+      <%= @blog_post.title %></a></h2>
+      <%#= strip_tags(@blog_post.body) %>
+      <%= @blog_post.body.html_safe %>
 
-    <!--LATEST NEWS START HERE-->
+    </article>
 
+    <div class="slider grid col-one-half mq2-col-full">
 
+      <img src="https://s3.amazonaws.com/RBIPRODUCTION/2015/10/12/urbino/urbino.png" style="width: 530px">
 
-    <h2><a href="/blog/posts/<%= @blog_post.id %>"><%= @blog_post.title %></a></h2>
-    <%#= strip_tags(@blog_post.body) %>
-    <%= @blog_post.body.html_safe %>
-      <!--   <p>2013 was an amazing summer at the Bolshoi. Please check out our new video for some of the highlights.
-          <p>
-            Four dancers from Finland, Haiti and Taiwan had been accepted to a yearly training program at the Bolshoi Ballet Academy in Moscow.
-            <p>
-              Congratulations to Anna Patomaki, Anael Barrau, Kuo Jung-An and Pan, Cheng-Hui!!!</p>
-            -->
+    </div>
+  </div>  
 
-          </article>
+  <div style="text-align: center; margin-top: -4em; margin-bottom: 2em">
 
-          <div class="slider grid col-one-half mq2-col-full">
+    <p style="text-align: center; display: inline-block"><img src="https://s3.amazonaws.com/RBIPRODUCTION/2015/10/12/urbino/logo1.png" style="width: 200px" /></p>
 
-            <div style="height: 300px;">
-              <iframe width="530" height="298" src="//www.youtube.com/embed/x8FLjgb0eNw?rel=0" frameborder="0" allowfullscreen></iframe>
-              
-              <!--LATEST NEWS START END-->
+    <p style="text-align: center; display: inline-block; margin: 0 1em 0 1em"><img src="https://s3.amazonaws.com/RBIPRODUCTION/2015/10/12/urbino/logo2.png" style="width: 200px" /></p>
 
+    <p style="text-align: center; display: inline-block"><img src="https://s3.amazonaws.com/RBIPRODUCTION/2015/10/12/urbino/logo3.png" style="width: 200px" /></p>
 
-            </div>
-          </div>  
-        </section>
+  </div>
 
-        <section class="services grid-wrap">
-          <header class="grid col-full">
-            <hr>
-            <p class="fleft">Sessions</p>
-            <a href="sessions.html" class="arrow fright">see more Sessions</a>
-          </header>
-
-          <article class="grid col-full">
-            <!--<aside>01</aside>-->
-            <h5>ALL WEEKS INCLUDE:</h5>
-            <ul style="list-style:disc;margin-left: 15px;">
-              <li>Classes at the Academy</li>
-              <li>Housing at the Academy</li>
-              <li>Meals at the Academy</li>
-              <li>Weekend sightseeing trips with translator and tour guide</li>
-              <li>Travel from the airport in Moscow and to the airport in Moscow</li>
-              <li><a href="mailto:contact@russianballetinternational.com?subject=Visa%20Info">Visa *</a></li>
-              <li><a href="mailto:contact@russianballetinternational.com?subject=Air%20Travel%20Info">Air Travel*</a></li>
-              <li><a href="mailto:contact@russianballetinternational.com?subject=Travel%20Insurance">Travel Insurance*</a></li>
-            </ul>
-
-          </article>  
-        </section>
-
-        <section class="works grid-wrap">
-          <header class="grid col-full">
-            <hr>
-            <p class="fleft">Gallery</p>
-            <a href="gallery-section/" class="arrow fright">see more Gallery</a>
-          </header>
+</section>
 
 
-            <%= render "layouts/gallery" %>
+<section class="services grid-wrap" >
+  <header class="grid col-full">
+    <hr>
+    <p class="fleft">Recent News</p>
+    <a href="/blog" class="arrow fright">read more posts</a>
+  </header>
 
-          </section>
+  <article class="grid col-one-half mq2-col-full">
+    <h2>Bolshoi Ballet Academy Summer Intensive 2015</h2>
 
-      </div>
+      <p>
+        2015 was very successful summer program at the Bolshoi Ballet Academy.<br />
+        Please check out highlights short film. The longer version is coming soon!!!<br />
+        Three dancers had been accepted to a yearly training program at the Bolshoi Ballet Academy in Moscow.<br />
+        Congratulations to Sara Frazzetta, Dora Iattici and Noemi de Grandi !!!
+      </p>    
+  </article>
+
+    <div class="slider grid col-one-half mq2-col-full" style="height: 300px; margin-bottom: 2em">
+      <iframe width="530" height="298" src="//www.youtube.com/embed/psYepsQTEeg" frameborder="0" allowfullscreen></iframe>
+    </div>
+</section>
+
+
+
+<section class="services grid-wrap">
+  <header class="grid col-full">
+    <hr>
+    <p class="fleft">Sessions</p>
+    <a href="sessions.html" class="arrow fright">see more Sessions</a>
+  </header>
+
+  <article class="grid col-one-half mq2-col-full">
+    <!--<aside>01</aside>-->
+    <h5>ALL WEEKS INCLUDE:</h5>
+    <ul style="list-style:disc;margin-left: 15px;">
+      <li>Classes at the Academy</li>
+      <li>Housing at the Academy</li>
+      <li>Meals at the Academy</li>
+      <li>Weekend sightseeing trips with translator and tour guide</li>
+      <li>Travel from the airport in Moscow and to the airport in Moscow</li>
+      <li><a href="mailto:contact@russianballetinternational.com?subject=Visa%20Info">Visa *</a></li>
+      <li><a href="mailto:contact@russianballetinternational.com?subject=Air%20Travel%20Info">Air Travel*</a></li>
+      <li><a href="mailto:contact@russianballetinternational.com?subject=Travel%20Insurance">Travel Insurance*</a></li>
+    </ul>
+  </article>  
+
+  <div class="slider grid col-one-half mq2-col-full">
+
+    <div style="height: 300px; margin-bottom: 2em">
+      <iframe width="530" height="298" src="//www.youtube.com/embed/x8FLjgb0eNw?rel=0" frameborder="0" allowfullscreen></iframe>
+
+    </div>
+
+  </section>
+
+  <section class="works grid-wrap">
+    <header class="grid col-full">
+      <hr>
+      <p class="fleft">Gallery</p>
+      <a href="gallery-section/" class="arrow fright">see more Gallery</a>
+    </header>
+
+
+    <%= render "layouts/gallery" %>
+
+  </section>
+
+</div>
 <!--main-->
