@@ -73,7 +73,7 @@ module RbiApp
     config.assets.version = '1.0'
 
     config.action_dispatch.default_headers = {
-        'Access-Control-Allow-Origin' => 'http://rbi-test.herokuapp.com.com',
+        'Access-Control-Allow-Origin' => 'http://rbi-test.herokuapp.com',
         'Access-Control-Request-Method' => %w{GET POST OPTIONS}.join(",")
     }
 
